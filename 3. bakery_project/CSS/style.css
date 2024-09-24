@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    
+}
+
+
+div.home{
+    background-color: white;
+    background-image: url(../img/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+
+div.anchor-background-img{
+    display: inline-block;
+    background-image: url(../img/logo/bakery-light-1.png) , url(../img/logo/bakery-color.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 48px;
+    margin-right: 20%;
+    margin-left: 10px;
+    padding: 10px 10px;
+}
+
+div.anchor-size{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+div.home_sections{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+div.home_sections ul a{
+    display: inline-block;
+    margin: 3%;
+    color: white;
+}
+
+div.home-content{
+    margin-top: 40vh;
+    text-align: center;
+    color: white;
+    
+}
+
+div.home-content h1{
+    font-size: 34px !important;
+}
+
+div.home-content p{
+    font-size: 24px;
+}
+
+div.home-buttons-section{
+    text-align: center;
+}
+
+div.home-buttons{
+    text-align: center;
+}
+
+div.button-learn-more{
+    display: inline-block;
+    background-color: tan;
+    margin-right: 30px;
+    padding: 28 15;
+}
+
+div.button-learn-more , div.button-contact-us{
+    padding: 10px 10px; 
+}
+
+div.button-learn-more p span{
+    display: inline-block;
+    color: white;
+    
+}
+
+div.button-contact-us{
+    display: inline-block;
+    border: 1px white solid;
+    color: white;
+    padding: 28 15;
+}
+
+/* Second page: */
+div.second-page{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+div.who-we-are-img{
+    display: inline-block;
+    padding: 15vh 5% 15vh 10%;
+    width: 40%;
+}
+
+div.who-we-are-img img{
+    height: 70vh;
+    width: 100%;
+}
+
+div.who-we-are-txt{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 15vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+div.list-span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+
+/* Third page */
+
+div.third-page{
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+
+div.our-location-img{
+    display: inline-block;
+    width: 45%;
+    margin: 10vh 3% 15vh 5%;
+    
+}
+
+div.our-location-img img{
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+}
+
+div.our-location-txt{
+    margin-left: 5%;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 15vh;
+}
+/* ----------------------------------------- */
+
+/* fourth page: */
+div.fourth-page{
+    background-color: #ffffff;
+    text-align: center;
+    height: 100vh;
+    padding-top: 10px;
+}
+
+
+div.baking-types{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+div.superior-breads{
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin: 0 4%;
+}
+
+div.superior-breads img{
+    width: 100%;
+}
+
+
+div.bagels{
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin: 0 4%;
+}
+
+div.bagels img{
+    width: 100%;
+}
+
+
+div.cookies{
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin: 0 4%;
+}
+
+div.cookies img{
+    width: 100%;
+}
+
+
+div.clr{
+    clear: both;
+}
+
+
+/* ------------------------------------- */
+
+/* fifth page: */
+
+div.fifth-page{
+    background-color: #f8f8f8;
+    height: 100vh;
+}
+div.contact-information-txt{
+    float: left;
+    width: 40%;
+    margin: 0 5%;
+}
+
+div.map-img{
+    padding-top: 10px;
+    float: left;
+    width: 40%;
+    margin: 0 5%;
+}
+
+div.contact-information-txt ul{
+    text-align: left;
+}
+
+div.contact-information-txt ul{
+    padding-inline-start: 0;
+}
+
+/* ---------------------------------- */
+
+div.sixth-page{
+    color: #969696;
+    background-color: #403d38;
+    background-image: url(../img/contact-detail-map.png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+    height: 60vh;
+}
+
+
+div.sixth-about-us, div.sixth-why-we-are-special , div.sixth-opening-hours, div.sixth-contact-details{
+    float: left;
+    width: 17%;
+    margin: 0 3%;
+}
+
+.address div{
+    width: 70%;
+    display: inline-block;
+}
+
+.address img{
+    vertical-align: top;
+}
+
+h4 span{
+    color: white;
+}
+
+
+div.sixth-page ul{
+    padding-inline-start: 0;
+}
+
+a{
+    color: #969696;
+}
+
+li.bottom-border{
+    padding-bottom: 10px;
+    border-bottom: #969696 solid 1px;
+    margin-bottom: 10px;
+}
+
+div.div-footer{
+   color: #797979;
+   background-color: #353330;
+   height: 45vh;
+   text-align: center;
+}
+
+div.img-footer img{
+    margin-top: 5vh;
+}

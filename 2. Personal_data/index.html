@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <title>Personal data form</title>
+</head>
+
+
+<body>
+    
+    <!-- this is to draw the frame around the whole page -->
+    <fieldset style="height:100%; background-color: brown;">
+    
+        <!-- this is to type the title -->
+        <legend style="background-color: cornflowerblue;">Personal Data</legend>
+        
+        <!-- form to collect the data -->
+        <form>
+
+            <!-- this is to group the first and last names in a single group -->
+            <fieldset style="background-color: chocolate;">
+                
+                <!-- this to type the title for the grouped items -->
+                <legend>
+                    <!-- div: for drawing a box around the title  --
+                      --      with the desired size.              -->
+                    <div style="background-color:cornflowerblue; height: 70; align-content: center;">YourName:</div>
+                </legend>
+                
+                <!-- table to show the inputs(first and last names) --
+                  -- in an organized way.                           -->
+                <table>
+                    <!-- 1. row of the first name  -->
+                    <tr>
+                        <!-- first table data(i.e., td) for typing the --
+                          -- "first name" label.                       -->
+                        <td>
+                            <label for="fName">first Name </label>
+                        </td>
+                        <!-- second table data(i.e., td) for typing the -- 
+                          -- ":" character.                             -->
+                        <td>: </td>
+                        <!-- third table data(i.e., td) for taking the   --
+                          -- first name from the user and saving it with --
+                          -- name: "firstName" to be sent to the backend -->
+                        <td>
+                            <input type="text" id="fName" name="firstName" placeholder="ex: Youssef"/>
+                        </td>
+                    </tr>
+
+                    <!-- 2. row of the second name -->
+                    <tr>
+                        <!-- first table data(i.e., td) for typing the --
+                          -- "second name" label.                      -->
+                        <td>
+                            <label for="sName">Second name &nbsp;</label>
+                        </td>
+                        <!-- second table data(i.e., td) for typing the -- 
+                          -- ":" character.                             -->
+                        <td>: </td>
+                        <!-- third table data(i.e., td) for taking the     --
+                          -- second name from the user and saving it with  --
+                          -- name: "secondName" to be sent to the backend  -->
+                        <td>
+                            <input type="text" id="sName" name="secondName" placeholder="ex: Khaled"/>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+            
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+            <br/>
+
+            <!-- table to align the items where the user will enter --
+              -- the required data.                                 -->
+            <table>
+
+                <!-- 1. 1st row to hold user's phone number -->
+                <tr>
+                    <td><label for="num"> <b>your number</b> &nbsp; </label></td>
+                    <td>:</td>
+                    <td><input type="tel" id="num" name="uNumber"/></td>
+                </tr>
+
+                <!-- 2. 2nd row to hold user's email -->
+                <tr>
+                    <td><label for="mail"> <b>Email</b> &nbsp; </label></td>
+                    <td>:</td>
+                    <td><input type="email" id="mail" name="uEmail"/></td>
+                </tr>
+
+                <!-- 3. 3rd row to hold user's password -->
+                <tr>
+                    <td><label for="pass"> <b>passowrd</b> &nbsp; </label></td>
+                    <td>:</td>
+                    <td><input type="password" id="pass" name="uPass"/></td>
+                </tr>
+                <!-- 4. 4th row to hold user's retyped password -->
+                <tr>
+                    <td><label for="rePass"> <b>rePassword</b> &nbsp; </label></td>
+                    <td>:</td>
+                    <td><input type="password" id="rePass" name="uRePass"/></td>
+                </tr>
+            </table>
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+            <br/>
+
+            
+        <!-- radio input to choose between male or female -->
+            <!-- 1. male choice -->
+            <input type="radio" id="radioMale" name="gender" value="male">
+            <label for="radioMale">Male</label>
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+
+            <!-- 2. female choice -->
+            <input type="radio" id="radioFemale" name="gender" value="female">
+            <label for="radioFemale">Female</label>
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+            <br/>
+            <br/>
+
+
+        <!-- checking boxes to take user's choice between student and/or --
+          -- graduate.                                                   -->
+            <!-- 1. Student choice -->
+            <input type="checkbox" id="checkStudent" name="graduation" value="student">
+            <label for="checkStudent">Student</label>
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+            
+            <!-- 2. Grad choice -->
+            <input type="checkbox" id="checkGrad" name="graduation" value="graduate">
+            <label for="checkGrad">Graduate</label>
+            
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+            <br/>
+
+        
+        <!-- drop-down list for taking user's choice from the listed --
+          -- universities.                                           -->
+
+            <!-- label to inform the user about the content of the --
+              -- list.                                             -->
+            <label for="uni">university:<br/></label>
+
+            <!-- list of the universities -->
+            <select name="university" id="uni">
+                <option value="auc">AUC</option>
+                <option value="helwan" selected>Helwan</option>
+                <option value="ainShams">Ain Shams</option>
+                <option value="cairo">Cairo</option>
+            </select>
+
+            <!-- this is for line break(i.e., new line) -->
+            <br/>
+
+            <!-- button to submit the form -->
+            <button type="submit">
+                <img src="./images/images.png" alt="submit button" width="100">
+            </button>
+
+        </form>
+
+    </fieldset>
+
+</body>
+
+</html>
