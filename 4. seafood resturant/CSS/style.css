@@ -1,0 +1,239 @@
+/* Global: */
+body{
+    margin: 0;
+}
+
+div.clr{
+    clear: both;
+}
+
+div.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+/* button: */
+div.btn{
+    font-size: 20px;
+    border: 3px rgb(234, 42, 61) solid;
+    color: rgb(234, 42, 61);
+    padding: 10px 25px;
+    display: inline-block;
+    font-weight: 100;
+}
+
+div.btn:hover{
+    background-color: rgb(234, 42, 61);
+    color: white;
+
+}
+
+/* ----------------------------- */
+
+/* 1. Home: */
+div.home{
+    height: 100vh;
+    background-color: #f6f2ea;
+    background-image: 
+    linear-gradient(rgba(246, 242, 234 , 0.7),
+                    rgba(246, 242, 234 , 0.7)),
+    url(../images/dina-seafood-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div.home div.container div.name-btn{
+    float: left;
+    width: 50%;
+}
+
+div.home div.container div.name-btn p{
+    color: rgb(39, 78, 186);
+    margin: 70px 0 80px 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 112px;
+}
+
+div.home div.container div.welcome{
+    float: right;
+    width: 30%;
+}
+
+div.home div.container div.welcome div.welcome-txt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
+    color: rgb(31, 53, 113);
+    margin: 80px 0 60px 0;
+    line-height: 41px;
+}
+
+div.home div.container div.welcome div.open-hours{
+    margin: 30px 0 50px 0;
+}
+
+div.home div.container div.welcome div.open-hours div.open-hours-head{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(39, 78, 186);
+    border-bottom: #274eba solid 1px;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+div.home div.container div.welcome div.open-hours div.open-hours-txt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 15px 0;
+    line-height: 27px;
+}
+
+div.home div.container div.welcome div.reservation div.reservation-head{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(39, 78, 186);
+    border-bottom: #274eba solid 1px;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+div.home div.container div.welcome div.reservation div.reservation-txt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 15px 0;
+    line-height: 27px;
+}
+
+/* ----------------------------- */
+/* 2. Gallary section: */
+div.gallary div.gallary-item{
+    width: 25%;
+    float: left;
+}
+div.gallary div.gallary-item img{
+    width: 100%;
+    display: block;
+}
+
+/* ----------------------------- */
+
+/* 3. History: */
+div.history{
+    background-color: #f6f2ea;
+}
+
+div.dates{
+    width: 45%;
+    float:left;
+}
+
+div.history div.dates div.date-item div.date-item-head,
+div.title{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(39, 78, 186);
+    border-bottom: #274eba solid 1px;
+    padding-bottom: 2px;
+    display: inline-block;
+    margin: 70px 0 10px 0;
+}
+
+div.history div.dates div.date-item div.date-item-txt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 27px;
+    color: rgb(31, 53, 113);
+}
+
+div.history div.brief{
+    width: 45%;
+    float: right;
+}
+
+
+div.history div.brief div.breif-head{
+    margin: 0 0 50px 0;
+    color: rgb(39, 78, 186);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 64px;
+
+}
+
+div.history div.brief div.brief-txt{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 10px 0 30px 0;
+    line-height: 27px;
+    color: rgb(31, 53, 113);
+}
+
+div.history div.photos div.photos-item{
+    margin: 40px 0;
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+div.history div.photos div.photos-item img{
+    width: 50%;
+}
+
+
+/* ----------------------------- */
+/* menu */
+
+div.menu{
+    background-color: #f6f2ea;
+}
+
+
+div.menu div.container{
+    text-align: center;
+}
+
+div.menu div.container div.menu-head div.menu-slogan{
+    margin: 0 0 30px 0;
+    color: rgb(39, 78, 186);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+div.menu div.menu-body{
+    margin-bottom: 50px;
+}
+
+div.menu div.menu-item{
+    width: 33.33%;
+    margin: 5px auto;
+    float: left;
+}
+
+div.menu div.menu-item h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    color: rgb(39, 78, 186);
+}
+
+div.menu div.menu-item p{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(31, 53, 113);
+}
+
+div.menu div.menu-item span{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(234, 42, 61);
+}
