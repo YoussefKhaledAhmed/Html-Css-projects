@@ -1,0 +1,20 @@
+/* ------------ Global styles: -------------- */
+:root:has(.light-dark-mode-btn:checked){
+  --first-background-color: #171717;
+  --second-background-color: #252525;
+  --third-background-color: #202020;
+  --aside-second-background-color: rgba(27, 27, 27,0.6);
+  --contact-background-color: black;
+  --input-container-background-color: #171717;
+  --first-color: rgb(255, 255, 255);
+  --second-color: rgb(193, 126, 31);
+  --third-color: rgb(159, 159, 159);
+  --button-hover-color: #d78c23;
+  --list-icon-status: visible;
+  --light-dark-mode-button-status: hidden;
+  --light-mode-icon-status: hidden;
+  --dark-mode-icon-status: visible;
+  --border-light-visibility-value: hidden;
+  --border-dark-visibility-value: visible;
+  --highlight-background-color: rgb(193, 126, 31);
+}

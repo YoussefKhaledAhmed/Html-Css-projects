@@ -1,0 +1,857 @@
+@media screen and (min-width: 640px) {
+
+/* Global: */
+body{
+    margin: 0;
+}
+
+div.container{
+    width: 90%;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+div.clr{
+    clear: both;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img-display-block{
+    display: block;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/* ------------------------ */
+
+/* 1. Home section: */
+div.home{
+    background-image: linear-gradient(rgb(85, 85, 85,0.2),rgb(85, 85, 85,0.2)),url(../images/hero\ img.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+/* a. navigation bar: */
+div.home div.navBar{
+    text-align: center;
+}
+
+div.navBar div.navBar-inner{
+    width: 90%;
+    display: inline-block;
+}
+
+div.navBar div.logo{
+    float: left;
+    padding: 15px 0;
+    width: 20%;
+}
+
+div.navBar div.logo a{
+    color: rgb(255, 48, 91);
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+div.navBar div.navBar-list{
+    float: right;
+    margin-right: 7%;
+}
+
+div.navBar div.navBar-list ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+div.navBar div.navBar-list ul li a.navBar-btn{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+div.navBar div.navBar-list ul li a.navBar-btn:hover{
+   color: rgb(255, 48, 91);
+}
+
+/* b. content: */
+div.home h3{
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.home  h1{
+    text-transform: uppercase;
+    color: rgb(255, 48, 91);
+    font-family: "Source Code Pro", monospace;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+div.content{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+div.home div.content div.home-content-animation{
+    padding: 5px 15px;
+    overflow: hidden;
+    display: inline-block;
+    animation-name: home-content-vertical-line-animation;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    border-right: 3px solid white;
+}
+
+div.home div.content div.home-content-animation div.text{
+    color: white;
+    animation-name: home-content-h4-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    font-family: "Source Code Pro", monospace;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+@keyframes home-content-h4-animation {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(120px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes home-content-vertical-line-animation {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* ----------------------------------------------------- */
+
+/* 2.Hello section: */
+div.hello{
+    text-align: center;
+}
+
+div.hello div.hello-inner{
+    text-align: center;
+    background-color: tomato;
+}
+
+div.hello div.hello-image div.hello-image-inner {
+    width: 25%;
+    border: 10px #555555 solid;
+    border-radius: 5px;
+    float: left;
+    margin: 80px 5% 80px 15%;
+    position: relative;
+}
+
+div.hello div.hello-image div.hello-image-inner img{
+    width: 105%;
+    transform: translate(15px , 15px);
+    border-radius: 5px;
+}
+
+div.hello div.hello-image div.hello-image-inner div.hello-img-shadow{
+    height: 0;
+    width: 105%;
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    opacity: 0;
+    border-radius: 5px;
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+div.hello div.hello-image div.hello-image-inner:hover div.hello-img-shadow{
+    background-color: rgba(0, 0, 0, 0.57);
+    opacity: 1;
+    height: 100%;
+}
+
+div.hello div.hello-image div.hello-image-inner div.hello-img-shadow div.hello-img-shadow-icons{
+    position: relative;
+    top: 50%;
+    color: white;
+}
+div.hello div.hello-image-inner div.hello-img-shadow div.hello-img-shadow-icons i{
+    margin: 0 5px;
+}
+div.hello div.hello-image-inner div.hello-img-shadow div.hello-img-shadow-icons i:hover{
+    color: rgb(255, 48, 91);
+}
+div.hello div.hello-txt{
+    width: 40%;
+    text-align: left;
+    margin: 80px 0;
+    float: left;
+}
+
+div.hello div.hello-txt h2{
+    font-family: "Source Code Pro", monospace;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    margin: 0;
+}
+
+div.hello div.hello-txt h2::before{
+    content: 'I ';
+    font-family: "Source Code Pro", monospace;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(255, 48, 91);
+}
+
+div.hello div.hello-txt p{
+    color: rgb(85, 85, 85);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+div.hello div.hello-txt-data{
+    overflow: auto;
+}
+
+div.hello div.hello-txt-data ul.ul-float-left{
+    float: left;
+    list-style-type: none;
+    margin-right: 20%;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+}
+
+div.hello div.hello-txt-data li span{
+    color: rgb(51, 51, 51);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div.hello div.hello-txt-data li{
+    color: rgb(85, 85, 85);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+div.hello div.hello-txt div.buttons div.float-left-btn{
+    float : left;
+    margin-right: 10px;
+    padding: 10px 25px;
+    background-color: rgb(255, 48, 91);
+    border-radius: 5px;
+    color:white;
+}
+
+div.hello div.hello-txt div.buttons div.float-left-btn:hover{
+    background-color: rgb(236, 36, 3);
+}
+
+/* ---------------------------------------- */
+
+/* 3. Our service section */
+div.our-service{
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+div.our-service h2.our-service-title{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 100px 0 10px 0;
+}
+
+div.our-service div.our-service-3-lines{
+    height: 10px;
+    width: 60px;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    border-top: 1px solid rgb(255, 48, 91);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.our-service div.our-service-3-lines div.middle-line{
+    height: 5px;
+    width: 180px;
+    border-top: 2px solid rgb(255, 48, 91);
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateX(-33.33%);
+}
+
+div.our-service div.services{
+    margin-bottom: 30px;
+}
+
+div.our-service div.services div.service-item{
+    margin-top: 30px;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 15px;
+    float: left;
+    transition-duration: 0.2s;
+    transition-property: all;
+}
+
+div.our-service div.services div.service-item:hover{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.our-service div.services div.service-item i{
+    color: rgb(255, 48, 91);
+}
+div.our-service div.services div.service-item:hover i{
+    font-size: 2em;
+}
+
+div.our-service div.services div.service-item h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.our-service div.services div.service-item p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+/* ---------------------------------------- */
+
+/* 4. our portfolio: */
+div.our-portfolio{
+    text-align: center;
+}
+
+div.our-portfolio div.our-portfolio-3-lines{
+    height: 10px;
+    width: 60px;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    border-top: 1px solid rgb(255, 48, 91);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.our-portfolio div.our-portfolio-3-lines div.middle-line{
+    height: 5px;
+    width: 180px;
+    border-top: 2px solid rgb(255, 48, 91);
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateX(-33.33%);
+}
+
+div.our-portfolio h2.our-portfolio-title{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 100px 0 10px 0;
+}
+
+div.our-portfolio div.our-portfolio-head ul li{
+    color: rgb(51, 51, 51);
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Roboto sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.our-portfolio div.our-portfolio-head ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+div.our-portfolio div.our-portfolio-head ul li span{
+    color: rgb(255, 48, 91);
+}
+
+div.our-portfolio div.our-portfolio-imgs{
+    padding: 0 5%;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item{
+    width: 30%;
+    margin: 1%;
+    float: left;
+    position: relative;
+}
+
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item img{
+    width: 100%;
+}
+
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item div.img-shadow{
+    width: 100%;
+    background-color: rgba(85, 85, 85,0);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item:hover div.img-shadow{
+    background-color: rgba(85, 85, 85,0.5);
+}
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item div.img-shadow i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: transparent;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+div.our-portfolio div.our-portfolio-imgs div.our-portfolio-img-item:hover div.img-shadow i{
+    color: #ff305b;
+}
+
+/* ------------------------------------------------------- */
+
+/* 5. counters section: */
+div.counters{
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+div.counters .counter-container{
+    position: relative;
+}
+
+div.counters .counter-item{
+    text-align: center;
+    float: left;
+    width: 25%;
+    margin: 100px 0;
+}
+
+div.counters .counter-item i{
+    color: #ff305b;
+}
+div.counters .counter-item p{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+div.counters .counter-item .counter-container p{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.counter-animation{
+    visibility: hidden;
+    animation-name: counter;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.counter-animation-last{
+    visibility: hidden;
+    animation-name: counter-last;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@keyframes counter {
+    0%{
+        visibility: visible;
+    }
+    99%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes counter-last {
+    0%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+/* ---------------------------------- */
+
+/* 6. feedback */
+div.feedback{
+    text-align: center;
+}
+
+div.feedback h2.feedback-title{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 100px 0 10px 0;
+}
+
+div.feedback div.feedback-3-lines{
+    height: 10px;
+    width: 60px;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    border-top: 1px solid rgb(255, 48, 91);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.feedback div.feedback-3-lines div.middle-line{
+    height: 5px;
+    width: 180px;
+    border-top: 2px solid rgb(255, 48, 91);
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateX(-33.33%);
+}
+
+.icon-yellow-color{
+    color: rgb(241, 195, 13);
+}
+
+div.feedback div.feedback-page{
+    background-color: rgb(241, 241, 241);
+    margin-top: 50px;
+    width: 55%;
+    height: 40vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+div.feedback div.feedback-page div.feedback-img{
+    width: 15%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 50px 30px;
+    float: left;
+    position:relative;
+}
+
+.red-part{
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    width: 250px;
+    height: 150px;
+    transform: rotate(-45deg);
+    background-color: rgb(255, 48, 91);
+}
+
+div.feedback div.feedback-page div.feedback-txt{
+    text-align: left;
+    float: left;
+    width: 65%;
+    margin-bottom: 50px;
+}
+
+div.feedback div.feedback-page div.feedback-txt h3{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+div.feedback div.feedback-page div.feedback-txt a{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+}
+
+div.feedback div.feedback-page div.feedback-txt p{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+div.feedback div.scroll-btns{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.scroll-btns .pink-btn{
+    width: 30px;
+    height: 10px;
+    background-color: rgb(255, 48, 91);
+    border-radius: 25%;
+    display: inline-block;
+}
+
+div.scroll-btns .transparent-btn{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(255, 48, 91);
+    border-radius: 50%;
+}
+
+div.feedback div.fill-page{
+    height: calc(80px + 40vh);
+}
+
+/* ------------------------------------------- */
+
+/* 7. blog: */
+
+div.blog{
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+
+div.blog h2.blog-title{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 100px 0 10px 0;
+}
+
+div.blog div.blog-3-lines{
+    height: 10px;
+    width: 60px;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    border-top: 1px solid rgb(255, 48, 91);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.blog div.blog-3-lines div.middle-line{
+    height: 5px;
+    width: 180px;
+    border-top: 2px solid rgb(255, 48, 91);
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateX(-33.33%);
+}
+
+div.blog div.blog-item{
+    width: 33.33%;  
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}
+
+div.blog div.blog-item-inner{
+    background-color: white;
+    text-align: left;
+    /* margin-right: 3%; */
+    margin-top: 50px;
+
+}
+
+div.blog div.blog-item div.blog-item-txt{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px 20px 15px;
+}
+
+div.blog div.blog-item .blog-item-date{
+    color: rgb(85, 85, 85);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+div.blog div.blog-item a.title{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+div.blog div.blog-item a:hover{
+    color: rgb(255, 48, 91);
+}
+
+div.blog div.blog-item a{
+    color: #333333;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+div.blog div.blog-item p{
+    color: rgb(85, 85, 85);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ---------------------------------- */
+
+/* 8.contact section: */
+div.contact{
+    text-align: center;
+}
+
+div.contact div.inputsContainer{
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+form#inputs{
+    margin-top: 50px;
+}
+
+input{
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 30px;
+
+}
+
+
+input#name , input#email{
+    width : 45%;
+}
+
+input#name{
+    margin-right: 8%;
+    float: left;
+}
+
+input#email{
+    float: right;
+}
+
+textarea{
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+div.contact button{
+    border: 0;
+    background-color: rgb(255, 48, 91);
+    color: white;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+div.contact button:hover{
+    background-color: rgb(236, 36, 3);
+}
+
+/* --------------------------------------------------- */
+
+/* Footer: */
+div.footer{
+    background-color: #333333;
+    height: 25vh;
+    position: relative;
+}
+
+div.footer-content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+div.footer-content i{
+    margin-right: 10px;
+}
+
+div.footer-content i:hover{
+    color: rgb(255, 48, 91);
+}
+
+div.footer-content p a{
+    text-decoration: none;
+    color: rgb(255, 48, 91);
+}
+
+}

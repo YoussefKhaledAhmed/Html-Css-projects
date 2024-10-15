@@ -1,0 +1,137 @@
+/* sm */
+@media screen and (min-width: 640px) {
+    .sm-100{
+        width: 100%;
+    }
+    .sm-50{
+        width: 50%;
+    }
+    .sm-33{
+        width: 33.33%;
+    }
+    .sm-25{
+        width: 25%;
+    }
+
+    .image-sm-100{
+        width: calc(100% - (var(--images-flex-column-gap)*2));
+    }
+    div.third-page .container .images-outer-container .images-inner-container{
+        height: auto;
+    }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    .md-100{
+        width: 100%;
+    }
+    .md-50{
+        width: 50%;
+    }
+    section.fourth-page .container .info .md-45{
+        width: 45%;
+    }
+    .md-33{
+        width: 33.33%;
+    }
+    .md-25{
+        width: 25%;
+    }
+
+    .image-md-50{
+        width: calc(50% - (var(--images-flex-column-gap)*2));
+    }
+
+    section.third-page .container .images-outer-container .images-inner-container{
+        height: 1700px;
+    }
+}
+
+/* lg */
+@media screen and (min-width:1024px) {
+    nav .container .container-inner{
+        width: 100%;
+    }
+
+    nav .nav-list-show-btn{
+        width: 0;
+    }
+
+    nav .nav-list-show-btn .nav-list-show-icon{
+        visibility: hidden;
+    }
+
+    nav .nav-list-lg{
+        visibility: visible;
+    }
+
+    section.first-page .container div.lg-50{
+        width: 46.1%;
+    }
+
+    main section.first-page .container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main section.first-page .container .first-page-txt{
+        text-align: start;
+        .buttons{
+            justify-content: start;
+        }
+    }
+
+    main section.third-page .container .images-outer-container .images-inner-container{
+        height: 820px;
+    }
+
+    .image-lg-33{
+        width: calc(33.33% - (var(--images-flex-column-gap)*2));
+    }
+
+    footer .container div.item-2{
+        order: 1;
+    }
+
+    .lg-100{
+        width: 100%;
+    }
+    .lg-50{
+        width: 50%;
+    }
+    .lg-45{
+        width: 45%;
+    }
+    .lg-33{
+        width: 33.33%;
+    }
+    .lg-25{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1205px){
+    main section.third-page .container .images-outer-container .images-inner-container{
+        height: 950px;
+    }
+}
+
+@media screen and (min-width: 1235px){
+    main section.third-page .container .images-outer-container .images-inner-container{
+        height: 850px;
+    }
+}
+/* xl */
+@media screen and (min-width: 1240px) {
+    main section.third-page .container .images-outer-container .images-inner-container{
+        height: 1000px;
+    }
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+    main section.third-page .container .images-outer-container .images-inner-container{
+        height: 1300px;
+    }
+}
